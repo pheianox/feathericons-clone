@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Feathericon.com</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" type="module"></script>
+    </head>
+    <body>
+        <div class="container" id="container">
+            <header class="header">
+                <section class="header__right">
+                    <a href="https://feathericon.com" class="link logo">Feather</a>
+                    <button class="btn btn--small version">v4.28.0</button>
+                </section>
+
+                <section class="header__left">
+                    <a href="https://github.com" class="link github">Github</a>
+
+                    <button class="mode" id="darkModeToggler">
+                        <svg
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                            stroke="#959da5"
+                            stroke-width="2"
+                            fill="#959da5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="css-4ym8mv"
+                        >
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </section>
+            </header>
+
+            <div class="intro">
+                <div class="intro__content">
+                    <h1 class="title">Simply beautiful open source icons</h1>
+
+                    <div class="controls">
+                        <button class="btn btn--primary">Get started</button>
+                        <button class="btn">Download all</button>
+                    </div>
+                </div>
+            </div>
+
+            <main class="main">
+                <div class="main__icons">
+                    <div class="search">
+                        <svg
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon"
+                        >
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+
+                        <input
+                            class="input"
+                            type="text"
+                            placeholder='Search 286 icons (Press "/" to focus)'
+                            id="search"
+                            name="search"
+                        />
+                    </div>
+                    <div class="grid"></div>
+
+                    <footer>
+                        <a href="https://github.com/pheianox" class="link devinfo">Made by pheianox</a>
+                    </footer>
+                </div>
+
+                <aside class="main__customize" id="mutualInputParent">
+                    <div class="main__header">
+                        <span class="title">Customize</span>
+                        <button class="btn btn--small" disabled="true" id="reset">Reset</button>
+                    </div>
+
+                    <div class="setting">
+                        <label class="setting__desc" for="size">Size</label>
+
+                        <div class="controller">
+                            <input type="range" name="size" id="size" min="12" max="100" step="2" />
+                            <p class="controller__preview" id="sizePreview">12px</p>
+                        </div>
+                    </div>
+
+                    <div class="setting">
+                        <label class="setting__desc" for="width">Stroke width</label>
+                        <div class="controller">
+                            <input type="range" name="width" id="width" min="0.5" max="3" step="0.5" />
+                            <p class="controller__preview" id="widthPreview">0.5px</p>
+                        </div>
+                    </div>
+
+                    <div class="setting">
+                        <label class="setting__desc" for="color">Color</label>
+
+                        <div class="controller">
+                            <div class="color">
+                                <input class="input input--compact" type="text" name="color"  id="color" placeholder="#000000"/>
+                            </div>
+                            <div class="color__preview" id="colorPreview"></div>
+                        </div>
+                    </div>
+                </aside>
+            </main>
+        </div>
+    </body>
+</html>
